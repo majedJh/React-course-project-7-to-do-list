@@ -1,13 +1,74 @@
+h1 {
+  margin-left: 50px;
+  font-size: 35px;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form , .list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form {
+  margin-bottom: 30px;
+  border: 1px solid #888;
+  border-radius: 6px;
+}
+.form input, .form select, .form button {
+  border: none;
+  background-color: transparent;
+  padding: 10px 0;
+}
+.form input{
+  flex: 1;
+}
+.form input:focus {
+  outline: none;
+}
+.form button {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 6px;
+}
+.list {
+  height: 60dvh;
+}
+.item {
+  display: flex;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.item .content {
+  flex: 1;
+}
+.item .importance {
+  padding-left: 10px;
+  border-left: 1px dotted #888;
+}
+.filter {
+  margin-top: auto;
+}
+.color-blue {
+  color: rgb(127, 217, 255);
+}
+.color-red {
+  color: rgb(239, 20, 60);
+}
+.color-green {
+  color: rgb(42, 183, 42);
+}
+.checked {
+  text-decoration: line-through;
 }
